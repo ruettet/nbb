@@ -1,0 +1,47 @@
+/* CSS declarations go here */
+.axis line {
+	  fill: none;
+	  stroke: #000;
+	  shape-rendering: crispEdges;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.x.axis path {
+  display: none;
+}
+
+.line {
+  fill: none;
+  stroke: steelblue;
+  stroke-width: 1.5px;
+}
+
+body {
+  margin: auto;
+  margin-top: 50px;
+  width: 800px;
+}
+
+.dropzone {
+    border:5px dashed darkgrey;
+    margin: auto;
+    margin-top: 50px;
+    width: 80%;
+    height: 200px;
+    display: block;
+}
+
+.resetbutton {
+    display: none;
+    margin: auto;
+}
+
+.charts {
+    display: none;
+}

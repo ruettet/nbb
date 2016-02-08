@@ -1,0 +1,45 @@
+<head>
+ <title>Jaarrekeningen over tijd | Dashboard</title>
+</head>
+
+<body>
+ <h1>Jaarrekeningen over tijd</h1>
+  <div class="explanation" id="explanation">
+    <p>Eenvoudige tool om jaarrekeningen van de Balanscentrale te visualizeren over tijd. Download de XBLR jaarrekeningen van 1 bedrijf van de balanscentrale en sleep ze in de dropzone beneden. Er verschijnen dan een aantal grafieken die geselecteerde aspecten van de jaarrekeningen over tijd uitzetten.</p>
+  </div>
+
+  <div class="controls">
+    {{> home}}
+  </div>
+
+ <div class="charts">
+   {{> werknemers}}
+   {{> opl}}
+ </div>
+</body>
+
+<template name="home">
+
+  <div id="dropzone" class="dropzone">
+    <p style="text-align: center; color: gray;">Sleep hierin de XBLR jaarrekeningen van het bedrijf dat je wil analyseren.</p>
+  </div>
+
+  <div class="resetbutton" id="resetbutton">
+    <p>
+      Jaarrekeningen van: {{data.company}}
+    </p>
+    <input type="button" value="Laad nieuwe XBLR jaarrekeningen op..."/>
+  </div>
+
+</template>
+
+<template name="werknemers">
+    <svg id="werknemers">
+    </svg>
+</template>
+
+<template name="opl">
+    <svg id="opl">
+    </svg>
+</template>
+
